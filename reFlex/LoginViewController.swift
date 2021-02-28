@@ -31,15 +31,17 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         
-        if canLogin {
-            performSegue(withIdentifier: "loginSegue", sender: self)
-        }
+        performSegue(withIdentifier: "loginSegue", sender: self)
+        
+//        if canLogin {
+//            performSegue(withIdentifier: "loginSegue", sender: self)
+//        }
     }
     
     func setupScreen() {
         loginButton.layer.cornerRadius = 10
         loginButton.clipsToBounds = true
-        loginButton.isEnabled = false
+//        loginButton.isEnabled = false
     }
     
     func checkForValidLogin() {
