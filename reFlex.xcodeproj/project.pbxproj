@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FBE498225EB182900D00237 /* WorkoutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE498125EB182900D00237 /* WorkoutStoryboard.storyboard */; };
+		1FBE498825EB188900D00237 /* ScheduleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE498725EB188900D00237 /* ScheduleStoryboard.storyboard */; };
+		1FBE499425EB18F900D00237 /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE499325EB18F900D00237 /* ProfileStoryboard.storyboard */; };
 		1FC686672596647C00EF810D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC686662596647C00EF810D /* AppDelegate.swift */; };
 		1FC686692596647C00EF810D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC686682596647C00EF810D /* SceneDelegate.swift */; };
-		1FC6866B2596647C00EF810D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6866A2596647C00EF810D /* ViewController.swift */; };
+		1FC6866B2596647C00EF810D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6866A2596647C00EF810D /* LoginViewController.swift */; };
 		1FC6866E2596647C00EF810D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC6866C2596647C00EF810D /* Main.storyboard */; };
 		1FC686702596647D00EF810D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC6866F2596647D00EF810D /* Assets.xcassets */; };
 		1FC686732596647D00EF810D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC686712596647D00EF810D /* LaunchScreen.storyboard */; };
@@ -35,10 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FBE498125EB182900D00237 /* WorkoutStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkoutStoryboard.storyboard; sourceTree = "<group>"; };
+		1FBE498725EB188900D00237 /* ScheduleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScheduleStoryboard.storyboard; sourceTree = "<group>"; };
+		1FBE499325EB18F900D00237 /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
 		1FC686632596647C00EF810D /* reFlex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reFlex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC686662596647C00EF810D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FC686682596647C00EF810D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FC6866A2596647C00EF810D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FC6866A2596647C00EF810D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1FC6866D2596647C00EF810D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FC6866F2596647D00EF810D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FC686722596647D00EF810D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +82,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FBE498025EB180B00D00237 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE498125EB182900D00237 /* WorkoutStoryboard.storyboard */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		1FBE498625EB187E00D00237 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE498725EB188900D00237 /* ScheduleStoryboard.storyboard */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		1FBE499225EB18ED00D00237 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE499325EB18F900D00237 /* ProfileStoryboard.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		1FC6865A2596647C00EF810D = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +129,12 @@
 		1FC686652596647C00EF810D /* reFlex */ = {
 			isa = PBXGroup;
 			children = (
+				1FBE499225EB18ED00D00237 /* Profile */,
+				1FBE498625EB187E00D00237 /* Schedule */,
+				1FBE498025EB180B00D00237 /* Workout */,
 				1FC686662596647C00EF810D /* AppDelegate.swift */,
 				1FC686682596647C00EF810D /* SceneDelegate.swift */,
-				1FC6866A2596647C00EF810D /* ViewController.swift */,
+				1FC6866A2596647C00EF810D /* LoginViewController.swift */,
 				1FC6866C2596647C00EF810D /* Main.storyboard */,
 				1FC6866F2596647D00EF810D /* Assets.xcassets */,
 				1FC686712596647D00EF810D /* LaunchScreen.storyboard */,
@@ -232,8 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FC686732596647D00EF810D /* LaunchScreen.storyboard in Resources */,
+				1FBE498225EB182900D00237 /* WorkoutStoryboard.storyboard in Resources */,
 				1FC686702596647D00EF810D /* Assets.xcassets in Resources */,
+				1FBE499425EB18F900D00237 /* ProfileStoryboard.storyboard in Resources */,
 				1FC6866E2596647C00EF810D /* Main.storyboard in Resources */,
+				1FBE498825EB188900D00237 /* ScheduleStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FC6866B2596647C00EF810D /* ViewController.swift in Sources */,
+				1FC6866B2596647C00EF810D /* LoginViewController.swift in Sources */,
 				1FC686672596647C00EF810D /* AppDelegate.swift in Sources */,
 				1FC686692596647C00EF810D /* SceneDelegate.swift in Sources */,
 			);
