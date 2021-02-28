@@ -17,7 +17,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setupScreen()
     }
     
@@ -41,14 +40,17 @@ class LoginViewController: UIViewController {
     func setupScreen() {
         loginButton.layer.cornerRadius = 10
         loginButton.clipsToBounds = true
+        loginButton.isEnabled = false
     }
     
     func checkForValidLogin() {
         if usernameTextField.text!.count > 6 && passwordTextField.text!.count > 6 {
-            loginButton.backgroundColor = .blue
+            loginButton.backgroundColor = UIColor.init(red: 53/256, green: 144/256, blue: 233/256, alpha: 1)
+            loginButton.isEnabled = true
             canLogin = true
         } else {
-            loginButton.backgroundColor = .red
+            loginButton.backgroundColor = UIColor.init(red: 137/256, green: 208/256, blue: 355/256, alpha: 1)
+            loginButton.isEnabled = false
             canLogin = false
         }
     }

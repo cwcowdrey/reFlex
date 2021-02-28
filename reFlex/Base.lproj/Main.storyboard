@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHa-uF-npN">
-                                <rect key="frame" x="50" y="551" width="314" height="72"/>
-                                <color key="backgroundColor" red="0.6045232395081821" green="0.89402576439617631" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="50" y="623" width="314" height="72"/>
+                                <color key="backgroundColor" red="0.53675471234606342" green="0.81710058956413634" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IZl-dq-SUY">
-                                <rect key="frame" x="50" y="261" width="314" height="34"/>
+                                <rect key="frame" x="50" y="333" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                                 <connections>
@@ -37,13 +37,16 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6Wv-CY-3PG">
-                                <rect key="frame" x="50" y="367" width="314" height="34"/>
+                                <rect key="frame" x="50" y="439" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                                 <connections>
                                     <action selector="passwordChanged:" destination="ddG-mH-Luk" eventType="editingChanged" id="0TS-KS-IqL"/>
                                 </connections>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="UvA-Hy-9i5">
+                                <rect key="frame" x="107" y="90" width="200" height="200"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UxD-64-a97"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -52,11 +55,13 @@
                             <constraint firstItem="fHa-uF-npN" firstAttribute="width" secondItem="6Wv-CY-3PG" secondAttribute="width" id="4gk-aT-WKt"/>
                             <constraint firstItem="6Wv-CY-3PG" firstAttribute="centerX" secondItem="IZl-dq-SUY" secondAttribute="centerX" id="6bY-8J-nJq"/>
                             <constraint firstItem="IZl-dq-SUY" firstAttribute="leading" secondItem="UxD-64-a97" secondAttribute="leading" constant="50" id="Hw6-cv-wdV"/>
+                            <constraint firstItem="UvA-Hy-9i5" firstAttribute="top" secondItem="UxD-64-a97" secondAttribute="top" constant="46" id="I6V-WW-ddt"/>
+                            <constraint firstItem="IZl-dq-SUY" firstAttribute="top" secondItem="UvA-Hy-9i5" secondAttribute="bottom" constant="43" id="PHf-WG-bjN"/>
                             <constraint firstItem="fHa-uF-npN" firstAttribute="top" secondItem="6Wv-CY-3PG" secondAttribute="bottom" constant="150" id="RpJ-Sn-q88"/>
                             <constraint firstItem="6Wv-CY-3PG" firstAttribute="top" secondItem="IZl-dq-SUY" secondAttribute="bottom" constant="72" id="c5n-UO-dBF"/>
                             <constraint firstItem="UxD-64-a97" firstAttribute="trailing" secondItem="IZl-dq-SUY" secondAttribute="trailing" constant="50" id="ege-bE-zGc"/>
                             <constraint firstItem="fHa-uF-npN" firstAttribute="centerX" secondItem="6Wv-CY-3PG" secondAttribute="centerX" id="ksg-9a-WPo"/>
-                            <constraint firstItem="IZl-dq-SUY" firstAttribute="top" secondItem="UxD-64-a97" secondAttribute="top" constant="217" id="m0i-rw-B2g"/>
+                            <constraint firstItem="UvA-Hy-9i5" firstAttribute="centerX" secondItem="UxD-64-a97" secondAttribute="centerX" id="uiu-14-mUZ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -68,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuf-Cg-pd7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1639" y="-115"/>
+            <point key="canvasLocation" x="-1639.1304347826087" y="-115.17857142857142"/>
         </scene>
         <!--WorkoutStoryboard-->
         <scene sceneID="hqE-LY-xjm">
@@ -122,6 +127,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="logo" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
