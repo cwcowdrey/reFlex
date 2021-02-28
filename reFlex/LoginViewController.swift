@@ -36,7 +36,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
     func setupScreen() {
         loginButton.layer.cornerRadius = 10
         loginButton.clipsToBounds = true
