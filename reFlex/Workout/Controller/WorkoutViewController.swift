@@ -12,14 +12,19 @@ class WorkoutViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var workouts: [Workout] = [Workout(title: "biceps", image: "camera.rotate.fill"), Workout(title: "legs", image: "camera.rotate.fill"), Workout(title: "gains", image: "camera.rotate.fill"), Workout(title: "nothing", image: "camera.rotate.fill"), Workout(title: "knees", image: "camera.rotate.fill")]
+    
     override func viewDidLoad() {
         print("got here")
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Workout"
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return workouts.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -27,7 +32,10 @@ class WorkoutViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath)
+        let workout = workouts[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! WorkoutCollectionViewCell
+        
+        cell.setupCell(with: workout)
         
         cell.layer.borderWidth = 2
         cell.layer.borderColor = .init(red: 200/256, green: 200/256, blue: 200/256, alpha: 1)
